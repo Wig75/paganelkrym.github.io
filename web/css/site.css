@@ -1,0 +1,447 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+/* ============================ моя доработка ============================= */
+
+
+.col-md-6 {
+padding-left:0px; 
+padding-right:0px;
+border:solid 1px;
+
+}
+
+.row {
+ border:solid 1px;   
+    
+}
+
+
+.center {
+padding: 40px 40px 40px 40px;
+border:solid 0px;
+color:#31394B;    
+    
+    
+}
+
+.center-color { 
+padding: 40px 40px 40px 40px;
+
+color:#31394B; 
+background-color:#FFF0F5;   
+border:solid 0px;    
+}
+
+.li {
+margin-left: 40px;
+}
+
+
+/* === Слайдер главной страницы === */
+
+.sliderA {
+    width: 570px;
+    height: 400px;
+    border: 1px solid #888;
+    position: relative;
+    text-align: center;
+    }
+	
+.sliderA > input {
+    display: none;
+    } 
+	
+.sliderA > input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 4px;
+    top: 90%;
+    transition: background 0.8s ease-out 0s;
+    }
+
+.sliderA > input + label:hover {
+    background: rgba(250, 250, 250, 0.8);
+    }
+
+.sliderA > input:checked + label {
+    background: rgba(220, 220, 220, 0.8);
+    } 
+	
+.sliderA > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+    } 
+	
+.sliderA > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+.sliderA > input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    } 
+	
+.sliderA > div > p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;  /* подписи с картинками*/
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    }   
+	
+.sliderA > input + label + div + label {
+    display: none;
+    }
+
+.sliderA > input:checked + label + div + label {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 50;
+    }
+
+
+
+
+
+
+
+.tours{
+    float:right;
+    margin:30px 50px 20px 0px;
+    padding:0px;
+    border:solid 0px;
+    height:180px;
+    width:800px;
+    line-height:22px;
+    color:#31394B; 
+    background-color:#FFF0F5;
+    border-radius: 0px 100px 100px 0px;
+    box-shadow: -2px 23px 42px -26px #000000;
+    text-decoration: none; /* Устранение подчёркивания ссылок. */
+} 
+
+.tours:hover {
+    background: #ccffff; /* Цвет блока при наведении курсора. */ 
+}
+	
+	
+.mini{
+    float:left;
+    margin:0px 0px 0px 0px;
+    border:solid 0px;
+    }
+
+	
+.description{
+    width: 350px;
+    height:50px;
+    margin:60px 0px 0px 10px;
+    float: left;
+    border:solid 0px;
+} 
+	
+			
+.price{
+    float:right;
+    margin:70px 60px 0px 0px;
+    height:40px;
+    border:solid 0px;
+}
+
+
+
+
+
+
+/*================= Бронирование ==================*/
+
+
+	/* === Remove input autofocus webkit === */
+    *:focus {outline: none;}
+
+    /* === Шрифты для формы и общая ширина === */
+
+
+    .contact_form {
+		width:700px;
+	}
+
+	
+    /* === Ширина формы === */
+    .contact_form p {
+    	width:350px;
+	margin:7px 10px 7px 0px;
+	padding:0px;
+    }
+	
+
+    /* === Размер и расположение блоков === */
+    .contact_form label {
+	width:300px;
+	margin-top: 3px;
+	display:inline-block;
+	float:center;
+	padding:3px;
+    }
+	
+	
+    .contact_form input {
+	height:20px; 
+	width:250px; 
+	padding:5px 8px;
+    }
+	
+	
+    .contact_form textarea {padding:8px; width:250px;}
+    .contact_form button {margin-left:65px;}
+
+	
+	
+	/* Цвета и эффекты */
+	.contact_form input, .contact_form textarea { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius:2px;
+		padding-right:30px;
+		-moz-transition: padding .25s; 
+		-webkit-transition: padding .25s; 
+		-o-transition: padding .25s;
+		transition: padding .25s;
+	}
+	
+	
+	.contact_form input:focus, .contact_form textarea:focus {
+		background: #fff; 
+		border:1px solid #555; 
+		box-shadow: 0 0 3px #aaa; 
+		padding-right:70px;
+	}
+
+	
+    /* === HTML5  === */	
+    .contact_form input:required, .contact_form textarea:required {
+	background: #fff no-repeat 98% center;
+    }
+	
+	
+    .contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+    }
+	
+	
+    .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #fff no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+    }
+
+	
+    /* === Стили подсказок === */
+    .form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; /* подсказки поверх всех элементов */
+	position: absolute; /* правильное отображение, если подсказка в 2 строки */
+	display: none;
+    }
+	
+	
+    .form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+    }
+
+
+    .contact_form input:focus + .form_hint {display: inline;}
+    .contact_form input:required:valid + .form_hint {background: #28921f;}
+    .contact_form input:required:valid + .form_hint::before {color:#28921f;}
+	
+	
+    /* === Оформление кнопки === */
+    button.submit {
+	background-color: #68b12f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+	background: -webkit-linear-gradient(top, #68b12f, #50911e);
+	background: -moz-linear-gradient(top, #68b12f, #50911e);
+	background: -ms-linear-gradient(top, #68b12f, #50911e);
+	background: -o-linear-gradient(top, #68b12f, #50911e);
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	-webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+	-moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-o-box-shadow: 0 1px 0 0 #9fd574 inset;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+    }
+	
+	
+    button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+    }
+	
+	
+    button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset; 
+	-webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	-o-box-shadow: 0 0 10px 5px #356b0b inset;
+    } 
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama>
+<!-- Pano2VR 3.1.2 panorama configuration -->
+<view fovmode="0">
+<start pan="0" tilt="0" fov="60"/>
+<min pan="0" tilt="-90" fov="45"/>
+<max pan="360" tilt="90" fov="80"/>
+</view>
+<autorotate speed="0.050" delay="5.00" returntohorizon="0.000" startloaded="0" />
+<input tilesize="2048" tilescale="1.00488" tile0url="domik1bedroom1360/domik1bedroom1360_o_0.jpg" tile1url="domik1bedroom1360/domik1bedroom1360_o_1.jpg" tile2url="domik1bedroom1360/domik1bedroom1360_o_2.jpg" tile3url="domik1bedroom1360/domik1bedroom1360_o_3.jpg" tile4url="domik1bedroom1360/domik1bedroom1360_o_4.jpg" tile5url="domik1bedroom1360/domik1bedroom1360_o_5.jpg" />
+<userdata title="&#1057;&#1087;&#1072;&#1083;&#1100;&#1085;&#1103; 1 &#1075;&#1086;&#1089;&#1090;&#1077;&#1074;&#1086;&#1075;&#1086; &#1076;&#1086;&#1084;&#1080;&#1082;&#1072; &#8470; 1 &quot;&#1055;&#1072;&#1075;&#1072;&#1085;&#1077;&#1083;&#1100; &#1050;&#1088;&#1099;&#1084;&quot;, &#1059;&#1095;&#1082;&#1091;&#1077;&#1074;&#1082;&#1072; (&#1057;&#1077;&#1074;&#1072;&#1089;&#1090;&#1086;&#1087;&#1086;&#1083;&#1100;)" description="&#1043;&#1086;&#1089;&#1090;&#1077;&#1074;&#1086;&#1081; &#1076;&#1086;&#1084; &#1074; &#1059;&#1095;&#1082;&#1091;&#1077;&#1074;&#1082;&#1077; &#1074; &#1057;&#1077;&#1074;&#1072;&#1089;&#1090;&#1086;&#1087;&#1086;&#1083;&#1077;" author="&#1040;&#1088;&#1090;&#1091;&#1088; &#1063;&#1080;&#1088;&#1082;&#1086;&#1074; (virtual-sevastopol.ru)" datetime="2017 &#1075;." copyright="paganelkrym.ru" source="paganelkrym.ru" info="http://paganelkrym.ru/" comment="" />
+<control sensitifity="8" simulatemass="1" lockedmouse="0" lockedkeyboard="0" lockedwheel="0" invertwheel="0" speedwheel="1" dblclickfullscreen="1" invertcontrol="1" />
+<hotspots width="180" height="20" wordwrap="1" >
+<hotspot id="4" skinid="" pan="122.952" tilt="-7.44503" title="&#1042; &#1093;&#1086;&#1083;&#1083;" url="domik1holl360.html" target="_self" />
+</hotspots>
+<sounds>
+</sounds>
+</panorama>
